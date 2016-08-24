@@ -78,6 +78,7 @@ public class HttpRequestSerializer:  RequestSerializer {
         } else {
             // set type
             request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            request.setValue("Basic ZTk1OGE2ZGUtMTUyNC00MWQ5LTg5NjktZmZiMGZhZTI5Njg0OlZYdDlzaElkZERibjNleW5UNzhFajN3OEtLVkR3endrNFVPMEJoQUl3Q1U9", forHTTPHeaderField: "Authorization")
             // set body
             if (parameters != nil) {
                 let body = self.stringFromParameters(parameters!).dataUsingEncoding(NSUTF8StringEncoding)
